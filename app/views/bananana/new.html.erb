@@ -1,0 +1,18 @@
+<div class="preda-new">
+	
+	<div class="link">
+		<%= link_to("Back to index", {:action => 'index'}, :class => 'back-link') %>
+	</div>
+
+	<div class="form">
+		<%= form_for(:bananana, :url => {:action => 'create'}) do |f| %>
+		
+			
+			<%= render(:partial => "form", :locals => {:f => f}) %>
+
+			<div class="buttom">
+				<%= submit_tag("Create new Preda")%>
+			</div>
+		<%end%>
+	</div>
+</div>
